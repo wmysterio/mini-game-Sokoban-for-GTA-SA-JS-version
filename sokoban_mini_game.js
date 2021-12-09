@@ -228,8 +228,8 @@ var IS_GAME_COMPLETE = false;
 var CURRENT_LEVEL_INDEX = -1;
 var PLAYER_POSITION = { 
 	row: -1, column: -1, 
-	resetNow() { this.row = -1; this.column = -1; },
-	isValid() { return this.row > -1 && this.column > -1; }
+	resetNow: function() { this.row = -1; this.column = -1; },
+	isValid: function() { return this.row > -1 && this.column > -1; }
 };
 
 var PLAYER_CHAR = new Player( 0 );
